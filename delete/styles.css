@@ -1,0 +1,137 @@
+/* .name to define css of classes */
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -100% 0; }
+}
+
+body::after {
+    content: "";
+    background-image: url('./background.png');
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-size: 860px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    margin: 15px;
+}
+
+.compatibility {
+    display: none;
+    
+}
+
+button {
+    background-color: aliceblue;
+    outline: black;
+    border-radius: 15px;
+    font-size: 40pt;
+    width:300px;
+    height: 100px;
+    margin: 20px;
+}
+
+.p1, .p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 20px;
+}
+
+.name, .mbti {
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.submit {
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.result {
+    font-size: 150px;
+    color: black;
+    margin: 0;
+}
+
+
+#red {
+    background-color: red;
+    animation-name: appear-disappear;
+	animation-duration: s;
+	animation-iteration-count: 2;
+}
+
+#yellow {
+    background-color: yellow;
+    animation-name: appear-disappear;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+}
+
+#light-green {
+    background-color: lightgreen;
+    animation-name: appear-disappear;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+}
+
+#dark-green {
+    background-color: darkgreen;
+    animation-name: appear-disappear;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+}
+
+#blue {
+    background-color: skyblue;
+    animation-name: appear-disappear;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+}
+
+@keyframes appear-disappear {
+	/* We set opacity to zero at the start 
+	of the animation. At 50% play time, 
+	here after 2s, the HTML element will
+	be fully opaque (appear). Then */
+	0% { opacity:0; } 
+	50% { opacity:1;}
+	100% { opacity:0; }
+}
+
+/* #name to define css of ids */
+#iframe {
+    width:50vw;
+}

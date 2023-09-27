@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head id="header">
+        <!-- Connects base.css to base.html -->
+        <link href="./styles.css" rel="stylesheet" />
+        <!-- Connects base.js to base.html -->
+        <script src="script.js"></script>
+    </head>
+        
+    <body id="body">
+        <div class="box" id="home">
+            <center><h1>MBTI Compatibility Test!!</h1></center>
+            <div class="container">
+                <div class="p1">
+                    <label class="name">Name:</label>
+                    <input id="n1" type="text" name="n1" required="true"/>
+                    <br><br>
+                        
+                    <label class="mbti">MBTI:</label>
+                    <input id="mbti1" type="text" name="mbti1" required="true">
+                    <br><br>
+                </div>
+                <div class="p2">
+                    <label class="name">Name:</label>
+                    <input id="n2" type="text" name="n2" required="true"/>
+                    <br><br>
+                    
+                    <label class="mbti">MBTI:</label>
+                    <input id="mbti2" type="text" name="mbti2" required="true">
+                    <br><br>
+                </div>
+            </div>
+    
+            <center><button type="submit" value="Submit" onclick="submit();"/>Submit</button></center>
+        </div>
+
+        <div class="compatibility" id="blue">
+            <center><h1 class="names">Here are the results</h1></center>
+            <center><h1 class="mbtis">Here are the results</h1></center>
+            <center><h2 class="result">IDEAL MATCH!:D</h2></center>
+        </div>
+
+        <div class="compatibility" id="dark-green">
+            <center><h1 class="names">Here are the results</h1></center>
+            <center><h1 class="mbtis">Here are the results</h1></center>
+            <center><h2 class="result">It's got a good chance!</h2></center>
+        </div>
+
+        <div class="compatibility" id="light-green">
+            <center><h1 class="names">Here are the results</h1></center>
+            <center><h1 class="mbtis">Here are the results</h1></center>
+            <center><h2 class="result">One-sided match.</h2></center>
+        </div>
+
+        <div class="compatibility" id="yellow">
+            <center><h1 class="names">Here are the results</h1></center>
+            <center><h1 class="mbtis">Here are the results</h1></center>
+            <center><h2 class="result">Could work...but not ideal...</h2></center>
+        </div>
+
+        <div class="compatibility" id="red">
+            <center><h1 class="names">Here are the results</h1></center>
+            <center><h1 class="mbtis">Here are the results</h1></center>
+            <center><h2 class="result">Uh-oh. Think this one through. :'(</h2></center>
+        </div>
+        
+    </body>
+</html>
+
+        
