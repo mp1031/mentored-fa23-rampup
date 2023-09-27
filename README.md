@@ -1,2 +1,4 @@
 # mentored-fa23-rampup
-is this how you do it?
+YAY MBTI COMPATIBILITY TEST
+Made by Michelle Park
+Fa2023 Mentored :D
